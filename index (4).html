@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shrinjoy Kumar Paul - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          shrinjoy Kumar Paul
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          Shrinjoy@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+    <a class="topmenu" href="#about-me">About Me</a>
+    <a class="topmenu" href="#skills">Skills</a>
+    <a class="topmenu" href="#projects">Projects</a>
+    <a class="topmenu" href="#recommendations">Recommendations</a>
+</div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+    
+      </div>
+ 
+      <div>
+        <h1>
+            Hi, I'm Shrinjoy Kumar Paul! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+        </h1>
+        <p>
+            I am a passionate full-stack developer specializing in modern web technologies.
+            With expertise in both frontend and backend development, I create efficient,
+            scalable web applications. When not coding, I enjoy contributing to open-source projects.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="all_skills">
+            <!-- Existing skills -->
+            <div class="skill">
+                <img src="html_finalprojimages/react.png"/>
+                <h6>React</h6>
+                <p>2 years experience</p>
+            </div>
+            <div class="skill">
+                <img src="html_finalprojimages/node.png"/>
+                <h6>Node.js</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill">
+                <img src="html_finalprojimages/css.png"/>
+                <h6>CSS</h6>
+                <p>3 years experience</p>
+            </div>
+        </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div style="clear:both;"></div>
+        <div id="projects-container" class="projects-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <h3>E-Commerce Platform</h3>
+            <ul>
+              <li>Developed a full-featured online store with React frontend and Node.js backend</li>
+              <li>Integrated Stripe API for secure payment processing</li>
+              <li>Implemented product search and filtering functionality</li>
+            </ul>
+          </div>
+          <hr>
+          
+          <!-- Project 2 -->
+          <div class="project-card">
+            <h3>Task Management App</h3>
+            <ul>
+              <li>Built a collaborative task manager with real-time updates using Socket.io</li>
+              <li>Created user authentication with JWT tokens</li>
+              <li>Designed responsive UI with drag-and-drop functionality</li>
+            </ul>
+          </div>
+          <hr>
+          
+          <!-- Project 3 -->
+          <div class="project-card">
+            <h3>Weather Dashboard</h3>
+            <ul>
+              <li>Developed a weather application using OpenWeather API</li>
+              <li>Implemented location-based weather forecasting</li>
+              <li>Added 5-day forecast with interactive charts</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+          <!-- Recommendation 1 -->
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Shrinjoy is an exceptional developer who consistently delivers high-quality code. 
+            His problem-solving skills and attention to detail make him a valuable asset to any team. 
+            He quickly adapts to new technologies and always meets project deadlines.
+            <span>&#8221;</span>
+          </div>
+      
+          <!-- Recommendation 2 -->
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Shrinjoy on our e-commerce project was a pleasure. 
+            His React expertise and clean code practices significantly improved our codebase. 
+            He's a great team player who communicates effectively and proposes innovative solutions.
+            <span>&#8221;</span>
+          </div>
+      
+          <!-- Recommendation 3 -->
+          <div class="recommendation">
+            <span>&#8220;</span>
+            I've collaborated with Shrinjoy on multiple projects and he never fails to impress. 
+            His full-stack capabilities and system design knowledge are outstanding. 
+            He would be my first choice for any complex web development project.
+            <span>&#8221;</span>
+          </div>
+        </div>
+      </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+        <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+        <img src="html_finalprojimages/checkmark--outline.svg"/>
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+      </div>
+  </body>
+</html>
